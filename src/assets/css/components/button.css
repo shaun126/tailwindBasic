@@ -15,6 +15,6 @@
 	}
 
 	.btn-light {
-		@apply border-gray-200 text-gray-800 hover:bg-gray-100 focus:ring-gray-200;
+		@apply bg-white border-gray-200 text-gray-800 hover:bg-gray-100 focus:ring-gray-200;
 	}
 }

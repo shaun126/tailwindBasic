@@ -3,6 +3,7 @@
 		background-image: url('../images/bg-pattern.svg');
 		background-repeat: repeat;
 		background-position: center center;
+		overflow-x: hidden;
 	}
 	.container {
 		margin-left: auto;

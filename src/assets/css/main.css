@@ -15,6 +15,7 @@
 @import 'components/button';
 @import 'components/navigation';
 @import 'components/card';
+@import 'components/list';
 
 /* Utility Imports */
 @import 'tailwindcss/utilities';
