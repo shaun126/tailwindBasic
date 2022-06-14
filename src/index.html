@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind css Crash Course</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body class="antialiased bg-body text-black-900 font-body leading-relaxed px-4 sm:px-0">
+		<!-- Navbar -->
+		<header class="container py-6">
+			<nav class="flex justify-between flex-wrap items-center">
+				<!-- Logo -->
+				<div class="w-1/2 xl:w-1/3">
+					<a class="block w-28" href="#">
+						<img src="./assets/images/logo.svg" alt="Logo" />
+					</a>
+				</div>
+
+				<!-- Navigation -->
+				<div class="w-full xl:w-1/3 flex order-last xl:order-none mt-10 xl:mt-0">
+					<ul class="navigation flex flex-col xl:flex-row justify-center gap-x-20 gap-y-6 xl:gap-y-0">
+						<li>
+							<a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Products</a>
+						</li>
+						<li>
+							<a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Features</a>
+						</li>
+						<li>
+							<a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Resources</a>
+						</li>
+						<li>
+							<a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Pricing</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Header CTA -->
+				<div class="w-1/2 xl:w-1/3 flex justify-end items-center">
+					<a class="hidden xl:inline-block text-gray-500 hover:text-blue-500 mr-4 font-medium text-sm" href="#">Log In</a>
+
+					<a class="hidden xl:inline-block btn btn-sm btn-primary" href="#">Sign Up</a>
+
+					<span class="menu-toggle xl:hidden w-10 h-10 flex justify-center items-center rounded bg-blue-500 text-white/75 cursor-pointer">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+							<path fill="none" d="M0 0h24v24H0z" />
+							<path fill="currentColor" d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" />
+						</svg>
+					</span>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero -->
+		<section class="py-10 xl:py-28">
+			<div class="container">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12">
+					<!-- Hero Text -->
+					<div class="relative text-center xl:text-left">
+						<h1 class="text-display-3">Stress free ad campaign management.</h1>
+
+						<p class="mt-6 mb-10 text-md md:text-xl text-gray-500 leading-normal">
+							Storm is the only business platform that lets you manage all your social media and advert campaigns from a single dashboard.
+						</p>
+
+						<div class="flex mb-3 justify-center xl:justify-start">
+							<a href="#" class="btn btn-primary mr-4">Request a demo</a>
+							<a href="#" class="btn btn-light">Sign Up</a>
+						</div>
+
+						<span class="text-md text-gray-500 font-medium">Free forever - no credit card required</span>
+
+						<div class="hidden lg:flex w-24 absolute right-0 xl:right-48 z-0">
+							<img src="./assets/images/doodle-2.svg" alt="doddle2" />
+						</div>
+					</div>
+
+					<!-- Hero Image -->
+					<div class="relative self-start">
+						<img class="relative rounded-2xl z-10" src="./assets/images/hero.jpg" alt="hero" />
+
+						<div class="w-16 absolute hidden lg:flex -top-12 -left-12 z-0">
+							<img src="./assets/images/doodle-1.svg" alt="" />
+						</div>
+
+						<div class="w-16 absolute hidden lg:flex -bottom-12 -right-12 rotate-180 z-0">
+							<img src="./assets/images/doodle-1.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- /Hero -->
+
+		<!-- Logo Cloud -->
+		<section class="py-10 xl:py-20 my-12 lg:my-16">
+			<div class="container">
+				<h3 class="mb-16 text-center font-medium leading-6 uppercase">Trusted by some of the world trusted companies</h3>
+
+				<div class="flex justify-center lg:justify-between items-center flex-wrap gap-16">
+					<div class="w-40">
+						<img src="./assets/images/logo-1.svg" alt="" />
+					</div>
+					<div class="w-40">
+						<img src="./assets/images/logo-2.svg" alt="" />
+					</div>
+					<div class="w-40">
+						<img src="./assets/images/logo-3.svg" alt="" />
+					</div>
+					<div class="w-40">
+						<img src="./assets/images/logo-4.svg" alt="" />
+					</div>
+					<div class="w-40">
+						<img src="./assets/images/logo-5.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<hr class="bg-blue-500 font-medium h-0.5" />
+		</div>
+		<!-- Features -->
+
+		<section class="py-10 xl:py-20">
+			<div class="container">
+				<div class="lg:w-1/2 mx-auto mb-16 text-center">
+					<h2 class="mb-8 text-display-3">Forget about routine campaign management</h2>
+
+					<p class="text-large text-gray-500 font-medium">
+						With our secure platform and multiple integrations with all the popular campaign, you can manage all your adverts in a single place.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+					<!-- Feature -->
+					<div class="card">
+						<div class="card-icon">
+							<div>1</div>
+						</div>
+
+						<h3 class="card-title">Increase advert conversions</h3>
+						<p class="card-body">Storm is an organic marketing platform built for Enterprises SEO and campaign management.</p>
+					</div>
+
+					<div class="card">
+						<div class="card-icon">
+							<div>2</div>
+						</div>
+
+						<h3 class="card-title">Increase advert conversions</h3>
+						<p class="card-body">Storm is an organic marketing platform built for Enterprises SEO and campaign management.</p>
+					</div>
+
+					<div class="card">
+						<div class="card-icon">
+							<div>3</div>
+						</div>
+
+						<h3 class="card-title">Increase advert conversions</h3>
+						<p class="card-body">Storm is an organic marketing platform built for Enterprises SEO and campaign management.</p>
+					</div>
+
+					<div class="card">
+						<div class="card-icon">
+							<div>4</div>
+						</div>
+
+						<h3 class="card-title">Increase advert conversions</h3>
+						<p class="card-body">Storm is an organic marketing platform built for Enterprises SEO and campaign management.</p>
+					</div>
+
+					<div class="card">
+						<div class="card-icon">
+							<div>5</div>
+						</div>
+
+						<h3 class="card-title">Increase advert conversions</h3>
+						<p class="card-body">Storm is an organic marketing platform built for Enterprises SEO and campaign management.</p>
+					</div>
+					<div class="card">
+						<div class="card-icon">
+							<div>6</div>
+						</div>
+
+						<h3 class="card-title">Increase advert conversions</h3>
+						<p class="card-body">Storm is an organic marketing platform built for Enterprises SEO and campaign management.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing -->
+
+		<!-- Footer -->
+
+		<!-- Main JS -->
+		<script type="module" src="./assets/js/main.js"></script>
+	</body>
+</html>
