@@ -541,10 +541,6 @@ body {
   margin-bottom: .5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -622,14 +618,6 @@ body {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -686,57 +674,13 @@ body {
   border-radius: 1rem;
 }
 
-.border-t {
-  border-top-width: 1px;
-}
-
-.border-blue-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(66 98 255 / var(--tw-border-opacity) );
-}
-
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(66 98 255 / var(--tw-bg-opacity) );
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 88 230 / var(--tw-bg-opacity) );
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops) );
-}
-
-.from-blue-500 {
-  --tw-gradient-from: #4262ff;
-  --tw-gradient-to: #4262ff00;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blue-400 {
-  --tw-gradient-from: #5572ff;
-  --tw-gradient-to: #5572ff00;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blue-300 {
-  --tw-gradient-from: #6881ff;
-  --tw-gradient-to: #6881ff00;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blue-200 {
-  --tw-gradient-from: #7b91ff;
-  --tw-gradient-to: #7b91ff00;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blue-100 {
-  --tw-gradient-from: #8ea1ff;
-  --tw-gradient-to: #8ea1ff00;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-blue-50 {
@@ -767,33 +711,6 @@ body {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -892,15 +809,6 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:px-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .md\:text-left {
-    text-align: left;
-  }
-
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -935,10 +843,6 @@ body {
 
   .lg\:gap-12 {
     gap: 3rem;
-  }
-
-  .lg\:text-left {
-    text-align: left;
   }
 }
 
